@@ -4,7 +4,7 @@ class autocomplete:
     
     #creating the AutoComplete object  with terms from the file
     def __init__(self, filename, k):
-        self.__file = open(filename, "r")
+        self.__file = open("src/" + filename, "r")
         self.__savedWords = []
         self.__matchedTerms = None
         self.__k = k
